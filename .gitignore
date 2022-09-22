@@ -1,0 +1,8 @@
+*secret*
+*private*
+!*private*.enc
+solution
+*.py
+*.cpp
+*.c
+*.out
