@@ -1,0 +1,15 @@
+name: NoviceA tests
+
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: test
+    runs-on: [self-hosted, u1804, linux]
+    steps:
+      - uses: actions/checkout@v2
+      - id: run and test
+        run: ./scripts/run_solution.sh noviceA
+      # No artifact upload here, 
